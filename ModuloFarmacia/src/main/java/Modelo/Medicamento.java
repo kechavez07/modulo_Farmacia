@@ -20,6 +20,9 @@ public class Medicamento {
         this.stock = stock;
     }
 
+    public Medicamento() {
+    }
+
     public String getNombre() {
         return nombre;
     }

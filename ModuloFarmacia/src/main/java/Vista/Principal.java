@@ -29,7 +29,7 @@ public class Principal extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
+        botonMedicamento = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
@@ -42,12 +42,12 @@ public class Principal extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(153, 255, 204));
         jPanel1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        jButton1.setFont(new java.awt.Font("Perpetua Titling MT", 1, 12)); // NOI18N
-        jButton1.setText("MEDICamento");
-        jButton1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        botonMedicamento.setFont(new java.awt.Font("Perpetua Titling MT", 1, 12)); // NOI18N
+        botonMedicamento.setText("MEDICamento");
+        botonMedicamento.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        botonMedicamento.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                botonMedicamentoActionPerformed(evt);
             }
         });
 
@@ -88,7 +88,7 @@ public class Principal extends javax.swing.JFrame {
                         .addComponent(jButton3))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(43, 43, 43)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(botonMedicamento, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -108,7 +108,7 @@ public class Principal extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(87, 87, 87)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botonMedicamento, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(36, 36, 36)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -160,14 +160,9 @@ public class Principal extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton5ActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-     Principal principal=new Principal();
-     MedicamentoV mv=new MedicamentoV();
-     mv.show(true);
-     principal.dispose();
-     
-     
-    }//GEN-LAST:event_jButton1ActionPerformed
+    private void botonMedicamentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonMedicamentoActionPerformed
+
+    }//GEN-LAST:event_botonMedicamentoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -205,48 +200,8 @@ public class Principal extends javax.swing.JFrame {
         
     }
 
-    public JButton getjButton1() {
-        return jButton1;
-    }
-
-    public void setjButton1(JButton jButton1) {
-        this.jButton1 = jButton1;
-    }
-
-    public JButton getjButton2() {
-        return jButton2;
-    }
-
-    public void setjButton2(JButton jButton2) {
-        this.jButton2 = jButton2;
-    }
-
-    public JButton getjButton3() {
-        return jButton3;
-    }
-
-    public void setjButton3(JButton jButton3) {
-        this.jButton3 = jButton3;
-    }
-
-    public JButton getjButton4() {
-        return jButton4;
-    }
-
-    public void setjButton4(JButton jButton4) {
-        this.jButton4 = jButton4;
-    }
-
-    public JButton getjButton5() {
-        return jButton5;
-    }
-
-    public void setjButton5(JButton jButton5) {
-        this.jButton5 = jButton5;
-    }
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    public javax.swing.JButton botonMedicamento;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;

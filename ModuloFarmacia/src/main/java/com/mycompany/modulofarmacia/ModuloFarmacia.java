@@ -5,6 +5,8 @@
 
 package com.mycompany.modulofarmacia;
 
+import Controlador.Control;
+import Vista.MedicamentoV;
 import Vista.Principal;
 
 /**
@@ -14,8 +16,13 @@ import Vista.Principal;
 public class ModuloFarmacia {
 
     public static void main(String[] args) {
+       
        Principal principal= new Principal();
-       principal.show(true);
+       MedicamentoV medicamentoV = new MedicamentoV();
+       principal.setVisible(true);
+       
+       Control c = new Control (medicamentoV,principal);
+       
        
     }
 }

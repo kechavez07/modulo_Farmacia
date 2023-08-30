@@ -33,7 +33,7 @@ public class MedicamentoV extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
+        botonAtras = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -61,12 +61,17 @@ public class MedicamentoV extends javax.swing.JFrame {
         jButton4.setText("ELIMINAR MEDICAMENTO");
         jButton4.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        jButton5.setFont(new java.awt.Font("Perpetua Titling MT", 1, 12)); // NOI18N
-        jButton5.setText("ATRAS");
-        jButton5.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        botonAtras.setFont(new java.awt.Font("Perpetua Titling MT", 1, 12)); // NOI18N
+        botonAtras.setText("ATRAS");
+        botonAtras.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        botonAtras.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                botonAtrasMouseClicked(evt);
+            }
+        });
+        botonAtras.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                botonAtrasActionPerformed(evt);
             }
         });
 
@@ -87,7 +92,7 @@ public class MedicamentoV extends javax.swing.JFrame {
                             .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(214, 214, 214)
-                        .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(botonAtras, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(60, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -102,7 +107,7 @@ public class MedicamentoV extends javax.swing.JFrame {
                     .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
-                .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(botonAtras, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(48, 48, 48))
         );
 
@@ -137,17 +142,18 @@ public class MedicamentoV extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-    RegistroMedicamentoV rm= new RegistroMedicamentoV();
-    MedicamentoV mv=new MedicamentoV();
-    rm.show(true);
-    mv.dispose();
+    
     
     
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void botonAtrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonAtrasActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }//GEN-LAST:event_botonAtrasActionPerformed
+
+    private void botonAtrasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botonAtrasMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botonAtrasMouseClicked
 
     /**
      * @param args the command line arguments
@@ -184,46 +190,15 @@ public class MedicamentoV extends javax.swing.JFrame {
         });
     }
 
-    public JButton getjButton1() {
-        return jButton1;
-    }
-
-    public void setjButton1(JButton jButton1) {
-        this.jButton1 = jButton1;
-    }
-
-    public JButton getjButton2() {
-        return jButton2;
-    }
-
-    public void setjButton2(JButton jButton2) {
-        this.jButton2 = jButton2;
-    }
-
-    public JButton getjButton4() {
-        return jButton4;
-    }
-
-    public void setjButton4(JButton jButton4) {
-        this.jButton4 = jButton4;
-    }
-
-    public JButton getjButton5() {
-        return jButton5;
-    }
-
-    public void setjButton5(JButton jButton5) {
-        this.jButton5 = jButton5;
-    }
     
     
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public javax.swing.JButton botonAtras;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
