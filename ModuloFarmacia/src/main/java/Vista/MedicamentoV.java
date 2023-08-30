@@ -190,6 +190,38 @@ public class MedicamentoV extends javax.swing.JFrame {
         });
     }
 
+    public JButton getBotonAgregar() {
+        return botonAgregar;
+    }
+
+    public void setBotonAgregar(JButton botonAgregar) {
+        this.botonAgregar = botonAgregar;
+    }
+
+    public JButton getBotonAtras() {
+        return botonAtras;
+    }
+
+    public void setBotonAtras(JButton botonAtras) {
+        this.botonAtras = botonAtras;
+    }
+
+    public JButton getBotonBuscar() {
+        return botonBuscar;
+    }
+
+    public void setBotonBuscar(JButton botonBuscar) {
+        this.botonBuscar = botonBuscar;
+    }
+
+    public JButton getBotonModificar() {
+        return botonModificar;
+    }
+
+    public void setBotonModificar(JButton botonModificar) {
+        this.botonModificar = botonModificar;
+    }
+
     
     
 

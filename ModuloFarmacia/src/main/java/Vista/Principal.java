@@ -30,10 +30,10 @@ public class Principal extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         botonMedicamento = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
+        botonGestPacientes = new javax.swing.JButton();
+        botonCrearReceta = new javax.swing.JButton();
+        butonRealizarVenta = new javax.swing.JButton();
+        botonGenerarInfor = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -51,29 +51,29 @@ public class Principal extends javax.swing.JFrame {
             }
         });
 
-        jButton2.setFont(new java.awt.Font("Perpetua Titling MT", 1, 12)); // NOI18N
-        jButton2.setText("GESTIONAR PACIENTES");
-        jButton2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        botonGestPacientes.setFont(new java.awt.Font("Perpetua Titling MT", 1, 12)); // NOI18N
+        botonGestPacientes.setText("GESTIONAR PACIENTES");
+        botonGestPacientes.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        botonGestPacientes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                botonGestPacientesActionPerformed(evt);
             }
         });
 
-        jButton3.setFont(new java.awt.Font("Perpetua Titling MT", 1, 12)); // NOI18N
-        jButton3.setText("CREAR RECETA ");
-        jButton3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        botonCrearReceta.setFont(new java.awt.Font("Perpetua Titling MT", 1, 12)); // NOI18N
+        botonCrearReceta.setText("CREAR RECETA ");
+        botonCrearReceta.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        jButton4.setFont(new java.awt.Font("Perpetua Titling MT", 1, 12)); // NOI18N
-        jButton4.setText("REALIZAR VENTA");
-        jButton4.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        butonRealizarVenta.setFont(new java.awt.Font("Perpetua Titling MT", 1, 12)); // NOI18N
+        butonRealizarVenta.setText("REALIZAR VENTA");
+        butonRealizarVenta.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        jButton5.setFont(new java.awt.Font("Perpetua Titling MT", 1, 12)); // NOI18N
-        jButton5.setText("GENERAR INFORME");
-        jButton5.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        botonGenerarInfor.setFont(new java.awt.Font("Perpetua Titling MT", 1, 12)); // NOI18N
+        botonGenerarInfor.setText("GENERAR INFORME");
+        botonGenerarInfor.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        botonGenerarInfor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                botonGenerarInforActionPerformed(evt);
             }
         });
 
@@ -85,22 +85,22 @@ public class Principal extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(75, 75, 75)
-                        .addComponent(jButton3))
+                        .addComponent(botonCrearReceta))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(43, 43, 43)
                         .addComponent(botonMedicamento, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(botonGestPacientes, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 111, Short.MAX_VALUE)
-                        .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(butonRealizarVenta, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(105, 105, 105))))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(207, 207, 207)
-                .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(botonGenerarInfor, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -109,13 +109,13 @@ public class Principal extends javax.swing.JFrame {
                 .addGap(87, 87, 87)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(botonMedicamento, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(botonGestPacientes, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(36, 36, 36)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(botonCrearReceta, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(butonRealizarVenta, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 41, Short.MAX_VALUE)
-                .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(botonGenerarInfor, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(84, 84, 84))
         );
 
@@ -152,13 +152,13 @@ public class Principal extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void botonGestPacientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonGestPacientesActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_botonGestPacientesActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void botonGenerarInforActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonGenerarInforActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }//GEN-LAST:event_botonGenerarInforActionPerformed
 
     private void botonMedicamentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonMedicamentoActionPerformed
 
@@ -200,12 +200,45 @@ public class Principal extends javax.swing.JFrame {
         
     }
 
+    public JButton getBotonCrearReceta() {
+        return botonCrearReceta;
+    }
+
+    public void setBotonCrearReceta(JButton botonCrearReceta) {
+        this.botonCrearReceta = botonCrearReceta;
+    }
+
+    public JButton getBotonGenerarInfor() {
+        return botonGenerarInfor;
+    }
+
+    public void setBotonGenerarInfor(JButton botonGenerarInfor) {
+        this.botonGenerarInfor = botonGenerarInfor;
+    }
+
+    public JButton getBotonGestPacientes() {
+        return botonGestPacientes;
+    }
+
+    public void setBotonGestPacientes(JButton botonGestPacientes) {
+        this.botonGestPacientes = botonGestPacientes;
+    }
+
+    public JButton getButonRealizarVenta() {
+        return butonRealizarVenta;
+    }
+
+    public void setButonRealizarVenta(JButton butonRealizarVenta) {
+        this.butonRealizarVenta = butonRealizarVenta;
+    }
+    
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public javax.swing.JButton botonCrearReceta;
+    public javax.swing.JButton botonGenerarInfor;
+    public javax.swing.JButton botonGestPacientes;
     public javax.swing.JButton botonMedicamento;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
+    public javax.swing.JButton butonRealizarVenta;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
