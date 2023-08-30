@@ -34,13 +34,13 @@ public class RegistroMedicamentoV extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
+        nombreMedicamento = new javax.swing.JTextField();
+        codigoMedicamento = new javax.swing.JTextField();
+        precioMedicamento = new javax.swing.JTextField();
+        stockMedicamento = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        botonGuardar = new javax.swing.JButton();
+        botonAtras = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -58,15 +58,15 @@ public class RegistroMedicamentoV extends javax.swing.JFrame {
         jLabel4.setFont(new java.awt.Font("Perpetua Titling MT", 1, 12)); // NOI18N
         jLabel4.setText("STOCK");
 
-        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+        codigoMedicamento.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField2ActionPerformed(evt);
+                codigoMedicamentoActionPerformed(evt);
             }
         });
 
-        jTextField3.addActionListener(new java.awt.event.ActionListener() {
+        precioMedicamento.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField3ActionPerformed(evt);
+                precioMedicamentoActionPerformed(evt);
             }
         });
 
@@ -83,10 +83,10 @@ public class RegistroMedicamentoV extends javax.swing.JFrame {
                     .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 251, Short.MAX_VALUE)
-                    .addComponent(jTextField2)
-                    .addComponent(jTextField3)
-                    .addComponent(jTextField4))
+                    .addComponent(nombreMedicamento, javax.swing.GroupLayout.DEFAULT_SIZE, 251, Short.MAX_VALUE)
+                    .addComponent(codigoMedicamento)
+                    .addComponent(precioMedicamento)
+                    .addComponent(stockMedicamento))
                 .addContainerGap(32, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -95,28 +95,28 @@ public class RegistroMedicamentoV extends javax.swing.JFrame {
                 .addGap(20, 20, 20)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(nombreMedicamento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(codigoMedicamento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
-                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(precioMedicamento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(16, 16, 16)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
-                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(stockMedicamento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(42, Short.MAX_VALUE))
         );
 
         jLabel5.setFont(new java.awt.Font("Perpetua Titling MT", 1, 14)); // NOI18N
         jLabel5.setText("REGISTRO DE MEDICAMENTO");
 
-        jButton1.setText("GUARDAR");
+        botonGuardar.setText("GUARDAR");
 
-        jButton2.setText("ATRAS");
+        botonAtras.setText("ATRAS");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -129,9 +129,9 @@ public class RegistroMedicamentoV extends javax.swing.JFrame {
                         .addComponent(jLabel5))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(172, 172, 172)
-                        .addComponent(jButton1)
+                        .addComponent(botonGuardar)
                         .addGap(81, 81, 81)
-                        .addComponent(jButton2)))
+                        .addComponent(botonAtras)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(0, 45, Short.MAX_VALUE)
@@ -147,21 +147,21 @@ public class RegistroMedicamentoV extends javax.swing.JFrame {
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(29, 29, 29)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton2)
-                    .addComponent(jButton1))
+                    .addComponent(botonAtras)
+                    .addComponent(botonGuardar))
                 .addContainerGap(29, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+    private void codigoMedicamentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_codigoMedicamentoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField2ActionPerformed
+    }//GEN-LAST:event_codigoMedicamentoActionPerformed
 
-    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+    private void precioMedicamentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_precioMedicamentoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField3ActionPerformed
+    }//GEN-LAST:event_precioMedicamentoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -200,66 +200,68 @@ public class RegistroMedicamentoV extends javax.swing.JFrame {
         
     }
 
-    public JButton getjButton1() {
-        return jButton1;
+    public JButton getBotonAtras() {
+        return botonAtras;
     }
 
-    public void setjButton1(JButton jButton1) {
-        this.jButton1 = jButton1;
+    public void setBotonAtras(JButton botonAtras) {
+        this.botonAtras = botonAtras;
     }
 
-    public JButton getjButton2() {
-        return jButton2;
+    public JButton getBotonGuardar() {
+        return botonGuardar;
     }
 
-    public void setjButton2(JButton jButton2) {
-        this.jButton2 = jButton2;
+    public void setBotonGuardar(JButton botonGuardar) {
+        this.botonGuardar = botonGuardar;
     }
 
-    public JTextField getjTextField1() {
-        return jTextField1;
+    public JTextField getCodigoMedicamento() {
+        return codigoMedicamento;
     }
 
-    public void setjTextField1(JTextField jTextField1) {
-        this.jTextField1 = jTextField1;
+    public void setCodigoMedicamento(JTextField codigoMedicamento) {
+        this.codigoMedicamento = codigoMedicamento;
     }
 
-    public JTextField getjTextField2() {
-        return jTextField2;
+    public JTextField getNombreMedicamento() {
+        return nombreMedicamento;
     }
 
-    public void setjTextField2(JTextField jTextField2) {
-        this.jTextField2 = jTextField2;
+    public void setNombreMedicamento(JTextField nombreMedicamento) {
+        this.nombreMedicamento = nombreMedicamento;
     }
 
-    public JTextField getjTextField3() {
-        return jTextField3;
+    public JTextField getPrecioMedicamento() {
+        return precioMedicamento;
     }
 
-    public void setjTextField3(JTextField jTextField3) {
-        this.jTextField3 = jTextField3;
+    public void setPrecioMedicamento(JTextField precioMedicamento) {
+        this.precioMedicamento = precioMedicamento;
     }
 
-    public JTextField getjTextField4() {
-        return jTextField4;
+    public JTextField getStockMedicamento() {
+        return stockMedicamento;
     }
 
-    public void setjTextField4(JTextField jTextField4) {
-        this.jTextField4 = jTextField4;
+    public void setStockMedicamento(JTextField stockMedicamento) {
+        this.stockMedicamento = stockMedicamento;
     }
+
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    public javax.swing.JButton botonAtras;
+    public javax.swing.JButton botonGuardar;
+    public javax.swing.JTextField codigoMedicamento;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
+    public javax.swing.JTextField nombreMedicamento;
+    public javax.swing.JTextField precioMedicamento;
+    public javax.swing.JTextField stockMedicamento;
     // End of variables declaration//GEN-END:variables
 }
