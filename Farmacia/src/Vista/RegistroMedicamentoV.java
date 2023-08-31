@@ -70,6 +70,12 @@ public class RegistroMedicamentoV extends javax.swing.JFrame {
             }
         });
 
+        stockMedicamento.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                stockMedicamentoActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -163,6 +169,10 @@ public class RegistroMedicamentoV extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_precioMedicamentoActionPerformed
 
+    private void stockMedicamentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_stockMedicamentoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_stockMedicamentoActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -200,53 +210,6 @@ public class RegistroMedicamentoV extends javax.swing.JFrame {
         
     }
 
-    public JButton getBotonAtras() {
-        return botonAtras;
-    }
-
-    public void setBotonAtras(JButton botonAtras) {
-        this.botonAtras = botonAtras;
-    }
-
-    public JButton getBotonGuardar() {
-        return botonGuardar;
-    }
-
-    public void setBotonGuardar(JButton botonGuardar) {
-        this.botonGuardar = botonGuardar;
-    }
-
-    public JTextField getCodigoMedicamento() {
-        return codigoMedicamento;
-    }
-
-    public void setCodigoMedicamento(JTextField codigoMedicamento) {
-        this.codigoMedicamento = codigoMedicamento;
-    }
-
-    public JTextField getNombreMedicamento() {
-        return nombreMedicamento;
-    }
-
-    public void setNombreMedicamento(JTextField nombreMedicamento) {
-        this.nombreMedicamento = nombreMedicamento;
-    }
-
-    public JTextField getPrecioMedicamento() {
-        return precioMedicamento;
-    }
-
-    public void setPrecioMedicamento(JTextField precioMedicamento) {
-        this.precioMedicamento = precioMedicamento;
-    }
-
-    public JTextField getStockMedicamento() {
-        return stockMedicamento;
-    }
-
-    public void setStockMedicamento(JTextField stockMedicamento) {
-        this.stockMedicamento = stockMedicamento;
-    }
 
 
 

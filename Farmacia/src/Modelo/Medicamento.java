@@ -58,5 +58,10 @@ public class Medicamento {
    public void registrarMedicamento(){
        System.out.println("ayudaaaaaaa ya no sé que hacer...");
    }
+
+    @Override
+    public String toString() {
+        return "Medicamento{" + "nombre=" + nombre + ", codigo=" + codigo + ", precio=" + precio + ", stock=" + stock + '}';
+    }
   
 }
